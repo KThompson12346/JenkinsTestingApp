@@ -1,4 +1,4 @@
 source 'https://supermarket.chef.io'
 
-cookbook "~/CourseWork/cookbooks/node", git: "git@github.com:KThompson12346/NodeCookBook.git"
-cookbook "~/CourseWork/cookbooks/mongo", git: "git@github.com:KThompson12346/MongoCookBook.git"
+cookbook "node", git: "git@github.com:KThompson12346/NodeCookBook.git"
+cookbook "mongo", git: "git@github.com:KThompson12346/MongoCookBook.git"
