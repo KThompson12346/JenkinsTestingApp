@@ -1,3 +1,4 @@
+# This file is for the dev environment 
 # Install required plugins
 # Include plugin for "vagrant-berkshelf!"
 required_plugins = ["vagrant-hostsupdater", "vagrant-berkshelf"]
