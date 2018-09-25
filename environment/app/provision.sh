@@ -13,13 +13,14 @@ sudo apt-get install nginx -y
 sudo apt-get install git -y
 
 # install nodejs
-sudo apt-get install python-software-properties
+sudo apt-get install python-software-properties -y
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install nodejs -y
 
-# install pm2
+# install pm2 - When you make a change 
 sudo npm install pm2 -g
-
+# removes the existing config file (default) on the vm (ec2 instance)
+sudo rm /etc/nginx/sites-available/default
 # set up nginx reverse proxy
-sudo ln -s /home/ubuntu/environment/nodeapp.conf /etc/nginx/conf.d/nodeapp.conf
+sudo ln -s ~/environment/app/default /etc/nginx/sites-available/default
 sudo nginx -s reload
