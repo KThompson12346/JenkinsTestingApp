@@ -1,4 +1,3 @@
-/* This file is for the Test environment, used in UAT */
 {
   "variables": {
     "aws_access_key": "",
